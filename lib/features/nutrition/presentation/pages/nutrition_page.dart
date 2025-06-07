@@ -6,7 +6,10 @@ class NutritionPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("NutritionPage")),
+      appBar: AppBar(
+        title: Text("NutritionPage"),
+        automaticallyImplyLeading: false,
+      ),
       body: Center(child: Text('Hello World!')),
     );
   }

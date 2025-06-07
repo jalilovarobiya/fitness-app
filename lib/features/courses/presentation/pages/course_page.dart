@@ -6,7 +6,10 @@ class CoursePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("CoursePage")),
+      appBar: AppBar(
+        title: Text("CoursePage"),
+        automaticallyImplyLeading: false,
+      ),
       body: Center(child: Text('Hello World!')),
     );
   }

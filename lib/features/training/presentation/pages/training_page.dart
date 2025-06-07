@@ -6,7 +6,10 @@ class TrainingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("TrainingPage")),
+      appBar: AppBar(
+        title: Text("TrainingPage"),
+        automaticallyImplyLeading: false,
+      ),
       body: Center(child: Text('Hello World!')),
     );
   }

@@ -6,7 +6,7 @@ class BlogPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("BlogPage")),
+      appBar: AppBar(title: Text("BlogPage"), automaticallyImplyLeading: false),
       body: Center(child: Text('Hello World!')),
     );
   }
