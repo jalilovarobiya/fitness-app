@@ -1,6 +1,5 @@
 import 'package:fitness_app/core/constants/app_images.dart';
 import 'package:fitness_app/features/auth/presentation/bloc/auth_bloc.dart';
-import 'package:fitness_app/features/auth/presentation/pages/login_page.dart';
 import 'package:fitness_app/features/navigation/pages/main_wrapper_page.dart';
 import 'package:fitness_app/features/splash/presentation/pages/onboarding.dart';
 import 'package:flutter/material.dart';

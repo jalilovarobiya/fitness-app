@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:fitness_app/core/constants/app_images.dart';
 import 'package:fitness_app/features/auth/presentation/bloc/auth_bloc.dart';
 import 'package:fitness_app/features/auth/presentation/widgets/text_form_field_widget.dart';
-import 'package:fitness_app/features/navigation/pages/main_wrapper_page.dart';
+import 'package:fitness_app/features/splash/presentation/pages/onboarding1.dart';
 import 'package:fitness_app/features/splash/presentation/widgets/row_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -56,7 +56,7 @@ class _RegisterPageState extends State<RegisterPage> {
             if (state is Authenticated) {
               Navigator.pushReplacement(
                 context,
-                MaterialPageRoute(builder: (_) => MainScreen()),
+                MaterialPageRoute(builder: (_) => Onboarding1()),
               );
             } else if (state is AuthError) {
               ScaffoldMessenger.of(
@@ -136,7 +136,6 @@ class _RegisterPageState extends State<RegisterPage> {
                         ),
                         Row(
                           spacing: 30,
-                          // mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Expanded(
@@ -241,24 +240,20 @@ class _RegisterPageState extends State<RegisterPage> {
                               backgroundColor: Colors.pink[400],
                             ),
                             onPressed:
-                                canCantinue
+                                (canCantinue && state is! AuthLoading)
                                     ? () {
-                                      state is AuthLoading
-                                          ? null
-                                          : () {
-                                            if (_formKey.currentState!
-                                                .validate()) {
-                                              context.read<AuthBloc>().add(
-                                                Register(
-                                                  name: _name.text,
-                                                  password: _password.text,
-                                                  email: _email.text,
-                                                ),
-                                              );
-                                            }
-                                          };
+                                      if (_formKey.currentState!.validate()) {
+                                        context.read<AuthBloc>().add(
+                                          Register(
+                                            name: _name.text,
+                                            password: _password.text,
+                                            email: _email.text,
+                                          ),
+                                        );
+                                      }
                                     }
-                                    : () {},
+                                    : null,
+
                             child:
                                 state is AuthLoading
                                     ? CircularProgressIndicator()

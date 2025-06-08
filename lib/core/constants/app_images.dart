@@ -6,6 +6,23 @@ class AppImages {
   static const String blur = ("assets/images/blur.png");
   static const String register = ("assets/images/register.png");
   static const String blur2 = ("assets/images/blur2.png");
+  static const String onboarding1 = ("assets/images/onboarding1.png");
+  static const String onboarding2 = ("assets/images/onboarding2.png");
+  static const String onboarding3 = ("assets/images/onboarding3.png");
+  static const String onboarding4 = ("assets/images/onboarding4.png");
+  static const String onboarding5 = ("assets/images/onboarding5.png");
+  static const String onboarding6 = ("assets/images/onboarding6.png");
+  static const String onboarding7 = ("assets/images/onboarding7.png");
+  static const String onboarding8 = ("assets/images/onboarding8.png");
+  static const String onboarding9 = ("assets/images/onboarding9.png");
+  static const String square = ("assets/images/square.png");
+  static const String rectangle = ("assets/images/rectangle.png");
+  static const String smallSquare = ("assets/images/small_square.png");
+  static const String arrow = ("assets/images/arrow.png");
+  static const String arrow2 = ("assets/images/square2.png");
+  static const String circle = ("assets/images/circle.png");
+  static const String arrow3 = ("assets/images/square3.png");
+  static const String leftArrrow = ("assets/images/leftArrow.png");
 
   static const String facebook = ("assets/svgs/facebook.svg");
   static const String google = ("assets/svgs/google.svg");
