@@ -253,7 +253,6 @@ class _RegisterPageState extends State<RegisterPage> {
                                       }
                                     }
                                     : null,
-
                             child:
                                 state is AuthLoading
                                     ? CircularProgressIndicator()

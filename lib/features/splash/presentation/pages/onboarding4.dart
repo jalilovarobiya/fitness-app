@@ -77,7 +77,6 @@ class Onboarding4 extends StatelessWidget {
 
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-
                         children: [
                           PageNavigation(
                             currentIndex: currenIndex,
