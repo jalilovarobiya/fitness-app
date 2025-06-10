@@ -1,8 +1,5 @@
-import 'dart:ui';
-
-import 'package:fitness_app/core/constants/app_images.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:fitness_app/core/utils/main_utils.dart';
 
 class StrechingWidget extends StatelessWidget {
   final String image;

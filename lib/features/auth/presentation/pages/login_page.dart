@@ -1,11 +1,10 @@
 import 'package:fitness_app/core/constants/app_images.dart';
+import 'package:fitness_app/core/routes/app_routes.dart';
 import 'package:fitness_app/features/auth/presentation/bloc/auth_bloc.dart';
-import 'package:fitness_app/features/auth/presentation/pages/register_page.dart';
 import 'package:fitness_app/features/auth/presentation/widgets/text_form_field_widget.dart';
-import 'package:fitness_app/features/navigation/pages/main_wrapper_page.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/di/service_locator.dart' as di;
+import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -34,10 +33,7 @@ class _LoginPageState extends State<LoginPage> {
         body: BlocConsumer<AuthBloc, AuthState>(
           listener: (context, state) {
             if (state is Authenticated) {
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(builder: (_) => MainScreen()),
-              );
+              Navigator.pushReplacementNamed(context, AppRoutes.main);
             } else if (state is AuthError) {
               ScaffoldMessenger.of(
                 context,
@@ -140,10 +136,7 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                         TextButton(
                           onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (_) => RegisterPage()),
-                            );
+                            Navigator.pushNamed(context, AppRoutes.register);
                           },
                           child: Text(
                             "Create a new account",

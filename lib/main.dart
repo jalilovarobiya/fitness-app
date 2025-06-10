@@ -1,7 +1,6 @@
-import 'package:firebase_core/firebase_core.dart';
-import 'package:fitness_app/features/app/presentation/pages/app_page.dart';
-import 'package:flutter/material.dart';
+import 'package:fitness_app/core/utils/main_utils.dart';
 import 'core/di/service_locator.dart' as di;
+import 'package:flutter/material.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

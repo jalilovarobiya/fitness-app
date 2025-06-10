@@ -1,6 +1,5 @@
-import 'package:fitness_app/core/constants/app_images.dart';
-import 'package:fitness_app/features/training/presentation/widgets/streching_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:fitness_app/core/utils/main_utils.dart';
 
 class BodyMind extends StatelessWidget {
   const BodyMind({super.key});

@@ -1,12 +1,13 @@
 import 'dart:ui';
 
 import 'package:fitness_app/core/constants/app_images.dart';
+import 'package:fitness_app/core/routes/app_routes.dart';
 import 'package:fitness_app/features/auth/presentation/bloc/auth_bloc.dart';
 import 'package:fitness_app/features/auth/presentation/widgets/text_form_field_widget.dart';
-import 'package:fitness_app/features/splash/presentation/pages/onboarding1.dart';
 import 'package:fitness_app/features/splash/presentation/widgets/row_widget.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'package:flutter/material.dart';
 import '../../../../core/di/service_locator.dart' as di;
 
 class RegisterPage extends StatefulWidget {
@@ -54,10 +55,7 @@ class _RegisterPageState extends State<RegisterPage> {
         body: BlocConsumer<AuthBloc, AuthState>(
           listener: (context, state) {
             if (state is Authenticated) {
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(builder: (_) => Onboarding1()),
-              );
+              Navigator.pushReplacementNamed(context, AppRoutes.onboarding1);
             } else if (state is AuthError) {
               ScaffoldMessenger.of(
                 context,

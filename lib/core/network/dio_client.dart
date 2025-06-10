@@ -1,5 +1,4 @@
-import 'package:dio/dio.dart';
-import 'package:fitness_app/core/network/intercentors.dart';
+import 'package:fitness_app/core/utils/main_utils.dart';
 
 class DioClient {
   final Dio _dio;

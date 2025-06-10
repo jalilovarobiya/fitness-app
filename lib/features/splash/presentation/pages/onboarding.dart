@@ -1,4 +1,5 @@
 import 'package:fitness_app/core/constants/app_images.dart';
+import 'package:fitness_app/core/routes/app_routes.dart';
 import 'package:fitness_app/features/splash/presentation/pages/sign_up_splash.dart';
 import 'package:fitness_app/features/splash/presentation/widgets/row_widget.dart';
 import 'package:flutter/material.dart';
@@ -77,11 +78,9 @@ class _OnboardingState extends State<Onboarding> {
                     onPressed:
                         canCantinue
                             ? () {
-                              Navigator.pushReplacement(
+                              Navigator.pushReplacementNamed(
                                 context,
-                                MaterialPageRoute(
-                                  builder: (_) => SignUpSplash(),
-                                ),
+                                AppRoutes.signUpSplash,
                               );
                             }
                             : () {},

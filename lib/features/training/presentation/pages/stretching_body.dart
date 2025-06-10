@@ -1,7 +1,5 @@
-import 'package:fitness_app/core/constants/app_images.dart';
-import 'package:fitness_app/features/training/presentation/pages/split_school.dart';
-import 'package:fitness_app/features/training/presentation/widgets/streching_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:fitness_app/core/utils/main_utils.dart';
 
 class StretchingBody extends StatelessWidget {
   const StretchingBody({super.key});
@@ -19,14 +17,7 @@ class StretchingBody extends StatelessWidget {
                 image: AppImages.splitSchool,
                 text: "Split school",
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) {
-                        return SplitSchool();
-                      },
-                    ),
-                  );
+                  Navigator.pushNamed(context, AppRoutes.splitSchool);
                 },
               ),
               StrechingWidget(

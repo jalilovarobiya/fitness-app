@@ -1,6 +1,4 @@
-import 'dart:developer';
-
-import 'package:dio/dio.dart';
+import 'package:fitness_app/core/utils/main_utils.dart';
 
 class LoggerIntercentor extends Interceptor {
   @override

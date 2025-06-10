@@ -1,5 +1,4 @@
-import 'package:adaptive_theme/adaptive_theme.dart';
-import 'package:fitness_app/features/splash/presentation/pages/splash_screen.dart';
+import 'package:fitness_app/core/utils/main_utils.dart';
 import 'package:flutter/material.dart';
 
 class AppPage extends StatelessWidget {
@@ -14,7 +13,8 @@ class AppPage extends StatelessWidget {
       builder: (light, dark) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: SplashScreen(),
+          initialRoute: AppRoutes.splash,
+          onGenerateRoute: RouteGenerator.generateRoute,
         );
       },
     );

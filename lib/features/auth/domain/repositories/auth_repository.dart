@@ -1,5 +1,4 @@
-import 'package:dartz/dartz.dart';
-import 'package:fitness_app/core/errors/failures.dart';
+import 'package:fitness_app/core/utils/main_utils.dart';
 
 abstract class AuthRepository {
   Future<Either<Failures, String>> login(String email, String password);

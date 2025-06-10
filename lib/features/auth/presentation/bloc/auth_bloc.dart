@@ -1,12 +1,4 @@
-import 'dart:async';
-
-import 'package:bloc/bloc.dart';
-import 'package:fitness_app/core/di/service_locator.dart';
-import 'package:fitness_app/features/auth/domain/repositories/auth_repository.dart';
-import 'package:fitness_app/features/auth/domain/usecases/login_usecase.dart';
-import 'package:fitness_app/features/auth/domain/usecases/logout_usecase.dart';
-import 'package:fitness_app/features/auth/domain/usecases/register_usecase.dart';
-import 'package:meta/meta.dart';
+import 'package:fitness_app/core/utils/main_utils.dart';
 
 part 'auth_event.dart';
 part 'auth_state.dart';

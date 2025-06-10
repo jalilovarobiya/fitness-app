@@ -1,9 +1,5 @@
-import 'package:fitness_app/core/constants/app_images.dart';
-import 'package:fitness_app/features/training/presentation/pages/body_mind.dart';
-import 'package:fitness_app/features/training/presentation/pages/functional_body.dart';
-import 'package:fitness_app/features/training/presentation/pages/stretching_body.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:fitness_app/core/utils/main_utils.dart';
 
 class TrainingPage extends StatelessWidget {
   const TrainingPage({super.key});

@@ -1,4 +1,5 @@
 import 'package:fitness_app/core/constants/app_images.dart';
+import 'package:fitness_app/core/routes/app_routes.dart';
 import 'package:fitness_app/features/splash/presentation/pages/onboarding2.dart';
 import 'package:flutter/material.dart';
 
@@ -51,9 +52,7 @@ class Onboarding1 extends StatelessWidget {
                         backgroundColor: Colors.pink[400],
                       ),
                       onPressed: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(builder: (contex) => Onboarding2()),
-                        );
+                        Navigator.of(context).pushNamed(AppRoutes.onboarding2);
                       },
                       child: Text(
                         "Start",

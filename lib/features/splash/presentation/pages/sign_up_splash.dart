@@ -1,4 +1,5 @@
 import 'package:fitness_app/core/constants/app_images.dart';
+import 'package:fitness_app/core/routes/app_routes.dart';
 import 'package:fitness_app/features/auth/presentation/pages/login_page.dart';
 import 'package:fitness_app/features/auth/presentation/pages/register_page.dart';
 import 'package:flutter/material.dart';
@@ -43,9 +44,9 @@ class _SignUpSplashState extends State<SignUpSplash> {
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
-                      Navigator.pushReplacement(
+                      Navigator.pushReplacementNamed(
                         context,
-                        MaterialPageRoute(builder: (_) => RegisterPage()),
+                        AppRoutes.register,
                       );
                     },
                     style: ElevatedButton.styleFrom(
@@ -90,9 +91,9 @@ class _SignUpSplashState extends State<SignUpSplash> {
                     ),
                     TextButton(
                       onPressed: () {
-                        Navigator.pushReplacement(
+                        Navigator.pushReplacementNamed(
                           context,
-                          MaterialPageRoute(builder: (_) => LoginPage()),
+                          AppRoutes.login,
                         );
                       },
                       child: Text(

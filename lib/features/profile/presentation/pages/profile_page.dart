@@ -1,3 +1,4 @@
+import 'package:fitness_app/core/routes/app_routes.dart';
 import 'package:fitness_app/features/auth/presentation/bloc/auth_bloc.dart';
 import 'package:fitness_app/features/auth/presentation/pages/login_page.dart';
 import 'package:fitness_app/features/user/presentation/bloc/user_bloc.dart';
@@ -44,9 +45,9 @@ class _ProfilePageState extends State<ProfilePage> {
         body: BlocConsumer<AuthBloc, AuthState>(
           listener: (context, state) {
             if (state is Unauthenticated) {
-              Navigator.pushAndRemoveUntil(
+              Navigator.pushNamedAndRemoveUntil(
                 context,
-                MaterialPageRoute(builder: (_) => LoginPage()),
+                AppRoutes.login,
                 (route) => false,
               );
             }
