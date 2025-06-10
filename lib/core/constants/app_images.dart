@@ -23,8 +23,22 @@ class AppImages {
   static const String circle = ("assets/images/circle.png");
   static const String arrow3 = ("assets/images/square3.png");
   static const String leftArrrow = ("assets/images/leftArrow.png");
+  static const String healthyBack = ("assets/images/health_back.png");
+  static const String splitSchool = ("assets/images/slit_school.png");
+  static const String streching = ("assets/images/streching.png");
+  static const String hiit = ("assets/images/hiit.png");
+  static const String isolation = ("assets/images/isolation.png");
+  static const String facebuilding = ("assets/images/facebuilding.png");
+  static const String yoga = ("assets/images/yoga.png");
+  static const String relaxation = ("assets/images/relaxation.png");
+  static const String fontsplit = ("assets/images/font_split.png");
+  static const String middlesplit = ("assets/images/middle_split.png");
+  static const String topstreching = ("assets/images/top_streching.png");
 
   static const String facebook = ("assets/svgs/facebook.svg");
   static const String google = ("assets/svgs/google.svg");
   static const String apple = ("assets/svgs/iphone.svg");
+  static const String payment = ("assets/svgs/payment.svg");
+  static const String paymentWhiteMode = ("assets/svgs/payment_white_mode.svg");
+  static const String lock = ("assets/svgs/lock.svg");
 }
